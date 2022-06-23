@@ -1,0 +1,118 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+:root {
+    --fonte1: Arial, Helvetica, sans-serif;
+    --fonte2: 'Source Sans Pro', sans-serif;
+    --cor1: #0080ed;
+    --cor2: #00747C;
+    --cor3: #0094C9;
+    --cor4: #878787;
+    --cor5: #202022;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+}
+
+html, body {
+    font-family: var(--fonte2);
+    text-rendering: optimizeLegibility;  /* Ajuda a manter a legibilidade boa, quando da zoom por exemplo */
+    -webkit-font-smoothing: antialiased; /* Ajuda a manter a legibilidade boa, quando da zoom por exemplo */
+}
+
+section {
+    max-width: 980px;
+    margin: auto;
+    transform: translateY(-10px);
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    margin: 20px 0px 30px 0px;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    background-color: var(--cor1);
+    border: 1px solid var(--cor1);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--cor3);
+    transform: translateY(-2px);
+}
+
+img {
+    width: 85%;
+    margin: 0 7%;
+    border-radius: 50px;
+    box-shadow: 5px 5px 15px -4px black;
+    transition: all 0.6s ease 0s;
+}
+
+img:hover {
+    transform: translateY(-7px);
+}
+
+.publication {
+    font-size: 14px;
+    margin: 0 0 0 11%;
+    color: var(--cor4);
+}
+
+h1 {
+    margin: 40px 0px 25px 0px;
+    font-size: 30px;
+}
+
+h5 {
+    margin: 15px 0px 15px 0px;
+    font-size: 15px;
+}
+
+h2 {
+    margin: 40px 0px 25px 0px;
+    font-size: 30px;
+}
+
+p {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+p:last-child {
+    padding-bottom: 100px;
+}
+
+.content-video {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1000px) {
+    section {
+        padding: 0px 20px;
+    }
+
+    h1 {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    img {
+        min-height: 300px;
+        object-fit: cover;
+    }
+}
